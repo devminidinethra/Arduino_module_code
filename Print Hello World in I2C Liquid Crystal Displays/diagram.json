@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "author": "Devmini Gamage",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-mega", "id": "mega", "top": 115.8, "left": 15.6, "attrs": {} },
+    {
+      "type": "wokwi-lcd1602",
+      "id": "lcd2",
+      "top": -166.4,
+      "left": 236,
+      "attrs": { "pins": "i2c" }
+    }
+  ],
+  "connections": [
+    [ "lcd2:VCC", "mega:5V", "red", [ "h-134.4", "v0.1", "h-115.2", "v460.8", "h189.7" ] ],
+    [ "lcd2:GND", "mega:GND.2", "black", [ "h-268.8", "v480", "h220.8" ] ],
+    [ "lcd2:SDA", "mega:20", "gray", [ "h-48", "v201.8", "h153.6" ] ],
+    [ "lcd2:SCL", "mega:21", "white", [ "h-38.4", "v182.7", "h153.6" ] ]
+  ],
+  "dependencies": {}
+}
